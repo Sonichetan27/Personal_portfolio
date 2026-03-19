@@ -49,8 +49,8 @@ export default function Navbar() {
           >
             <span className="text-xl font-bold font-mono">
               <span className="text-primary-600 dark:text-accent-400">&lt;</span>
-              <span className="text-slate-800 dark:text-white">MZ</span>
-              <span className="text-primary-600 dark:text-accent-400"> /&gt;</span>
+              <span className="text-slate-800 dark:text-white">Portfolio</span>
+              <span className="text-primary-600 dark:text-accent-400">/&gt;</span>
             </span>
           </Link>
 
@@ -63,7 +63,7 @@ export default function Navbar() {
                 spy={true}
                 smooth={true}
                 offset={-70}
-                duration={500}
+                duration={100}
                 activeClass="!text-primary-600 dark:!text-accent-400"
                 className="px-3 py-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors cursor-pointer rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
               >

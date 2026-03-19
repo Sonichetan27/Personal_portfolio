@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { HiCode } from 'react-icons/hi'
-import { experience } from '../data/portfolio'
+import { project } from '../data/portfolio'
 
 const containerVariants = {
   hidden: {},
@@ -21,7 +21,7 @@ const projectColors = [
 ]
 
 export default function Projects() {
-  const projects = experience[0]?.projects || []
+  const projects = project
 
   return (
     <section
