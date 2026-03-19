@@ -11,8 +11,11 @@ import {
 } from 'react-icons/fa'
 
 import {
-  SiApachekafka, SiMongodb, SiMysql, SiSnowflake
+  SiApachekafka, SiChatbot, SiMongodb, SiMysql, SiOpenai, SiPostman, SiSnowflake
 } from 'react-icons/si'
+
+import { HiOutlineAcademicCap } from "react-icons/hi";
+import { HiOutlineBadgeCheck } from "react-icons/hi";
 
 export const personalInfo = {
   name: 'Chetan Soni',
@@ -24,7 +27,7 @@ export const personalInfo = {
   github: 'https://github.com/Sonichetan27',
   location: 'MP, India',
   summary:
-    'An aspiring software engineer with a strong interest in building modern web applications and solving real-world problems. Skilled in the MERN stack and experienced in developing responsive and scalable applications. Familiar with React Native for mobile development and proficient in core programming languages such as Java, Python, C++, and SQL, along with a solid understanding of computer science fundamentals.',
+    'An aspiring software engineer with a keen interest in building modern web applications and solving real-world problems. I have worked with the MERN stack to develop responsive and scalable applications, and I am also familiar with React Native for mobile development. Comfortable with programming languages like Java, Python, C++, and SQL, along with a good understanding of core computer science concepts.',
   subtitles: [
     'MERN Stack Developer',
     'Problem Solver',
@@ -42,9 +45,9 @@ export const skillCategories = [
     title: 'Programming Languages',
     icon: FaCode,
     skills: [
-      { name: 'Python', icon: FaPython },
       { name: 'C++', icon: FaCode },
       { name: 'Java', icon: FaJava },
+      { name: 'Python', icon: FaPython },
     ],
   },
   {
@@ -59,10 +62,10 @@ export const skillCategories = [
     title: 'Tools',
     icon: FaTools,
     skills: [
-      { name: 'Docker', icon: FaDocker },
       { name: 'GitHub', icon: FaGithub },
       { name: 'Figma', icon: FaFigma },
-      { name: 'Postman' },
+      { name: 'Postman', icon: SiPostman},
+      { name: 'ChatGPT', icon: SiOpenai },
     ],
   },
 ]
@@ -73,24 +76,28 @@ export const project = [
     tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
     description:
       'Designed and developed a personal portfolio website to showcase my projects, skills, and certifications. Implemented responsive design, smooth animations, and an intuitive user interface to create an engaging experience for visitors.',
+    url: 'https://github.com/Sonichetan27/Personal_portfolio',
   },
   {
     title: 'Loomiva: Showcase Website',
     tech: ['MongoDB', 'React', 'Node', 'Express', 'Motion', 'Cloudinary'],
     description:
-      'Developed back-end REST APIs to perform CRUD operations and frontend to interact with these APIs. A showcase web application to showcase handcrafted woolen products.',
+      'A showcase web application to showcase handcrafted woolen products. Developed back-end REST APIs to perform CRUD operations and frontend to interact with these APIs.',
+    url: 'https://github.com/Sonichetan27/Loomive-frontend',
   },
   {
-    title: 'Event Management System (EMS)',
+    title: 'Event Management System',
     tech: ['Blockchain', 'MERN', 'React-native','MongoDB', 'React', 'Node', 'Express', 'Cloudinary'],
     description:
-      'Developed a migration pipeline from AWS DynamoDB to Azure CosmosDB. Built ETL processing with AWS Glue and PySpark, live data sync using EventBus and EventRule, a scalable high-performance read layer for the Licenses Search API, and reprocessing for failed/non-synced data via EventBridge.',
+      'A platform that connects event organizers with gig workers for short-term hiring. It enables organizers to easily find required workers and allows gig workers to explore flexible opportunities. Designed to simplify event workforce management and coordination.',
+    url: 'https://github.com/Sonichetan27/EventFlex',
   },
   {
     title: 'File Compression and Decompression Utility',
     tech: ['Java', 'Sql'],
     description:
       'Implemented a file compression and decompression utility using Java, utilizing algorithms like Huffman coding and LZW. Developed a user-friendly interface for selecting files and managing compression settings, resulting in efficient storage and faster file transfers.',
+    url: 'https://github.com/Sonichetan27/FileCompressor',
   },
 ]
 
@@ -98,44 +105,50 @@ export const certifications = [
   {
     title: 'Intrduction to Cyber Security',
     issuer: 'Cisco Networking Academy',
-    url: 'https://learn.microsoft.com/en-us/users/mohamedzuhair-1495/credentials/545db1537b4233c',
+    url: 'https://drive.google.com/file/d/1CExP_BP0Js4xaeJGV4TQMfA-UPyxmDFo/view?usp=drive_link',
     icon: FaLaptop,
   },
   {
     title: 'Intrduction to Modern AI',
     issuer: 'Cisco Networking Academy',
-    url: 'https://www.credly.com/badges/316dfc47-0760-4bc4-96dc-be62c0a61960/public_url',
+    url: 'https://drive.google.com/file/d/1YzPAYGQnIG2iyYEyBwqZrWp1vSlsJz8t/view?usp=drive_link',
     icon: FaLaptopCode,
   },
   {
     title: 'Python Essentials-I',
     issuer: 'Cisco Networking Academy',
-    url: 'https://learn.microsoft.com/en-us/users/mohamedzuhair-1495/credentials/e192269e735fac0c',
+    url: 'https://drive.google.com/file/d/1UfZvOsDjaEPpnapBpa1ErzZkfORwjD0h/view?usp=drive_link',
     icon: FaPython,
   },
   {
     title: 'Python Essentials-II',
     issuer: 'Cisco Networking Academy',
-    url: 'https://cp.certmetrics.com/amazon/en/public/verify/credential/8e01a7a45c764896a53a95408e59675d',
+    url: 'https://drive.google.com/file/d/1lQzK2IhRR7S1KZvepaTNP7ve7ZNwnI0K/view?usp=drive_link',
     icon: FaPython,
   },
   {
     title: 'Apply AI: Analyse Customer Reviews',
     issuer: 'Cisco Networking Academy',
-    url: 'https://www.credential.net/e3256612-1b69-4dde-b40a-fa6166a45e02#gs.hw97ee#acc.5T1hwJjE',
+    url: 'https://drive.google.com/file/d/1OZRQFz6XHtNbkFdxE4EShdg0lOukdFFn/view?usp=drive_link',
     icon: SiSnowflake,
   },
   {
     title: 'Fundamentals of Object-Oriented Programming',
     issuer: 'IIT Roorkee',
-    url: 'https://www.credly.com/badges/e8f53347-aa4d-4c20-a72a-2c49da25a08f/public_url',
+    url: 'https://drive.google.com/file/d/1grNPBPlLYhqKSKOJNc0iSIPq-uoI5gXw/view?usp=drive_link',
     icon: FaObjectGroup,
   },
   {
     title: 'Programming in Modern C++',
     issuer: 'IIT Kharagpur',
-    url: 'https://www.credly.com/badges/2ef47da1-0d7f-445a-b5e1-bc7d52d866ce/public_url',
-    icon: SiApachekafka,
+    url: 'https://drive.google.com/file/d/1FuNculztKWJKABCMAcyiIYRWOIEo7Aai/view?usp=drive_link',
+    icon: HiOutlineBadgeCheck,
+  },
+  {
+    title: 'Class Representative',
+    issuer: 'SISTec',
+    url: 'https://drive.google.com/file/d/1UWtEfWXcChjV2s3WWmGWR8eo5-blLQiF/view?usp=drive_link',
+    icon: HiOutlineAcademicCap ,
   },
 ]
 

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { HiCode } from 'react-icons/hi'
+import { HiCode, HiExternalLink } from 'react-icons/hi'
 import { project } from '../data/portfolio'
 
 const containerVariants = {
@@ -81,8 +81,8 @@ export default function Projects() {
 
                 {/* Description */}
                 <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4 flex-1">
-                  {project.description.length > 150
-                    ? project.description.substring(0, 150) + '...'
+                  {project.description.length > 250
+                    ? project.description.substring(0, 250) + '...'
                     : project.description}
                 </p>
 
@@ -101,6 +101,17 @@ export default function Projects() {
                       +{project.tech.length - 5}
                     </span>
                   )}
+
+                  {/* View Project Link */}
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs font-medium text-primary-600 dark:text-accent-400 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    Verify <HiExternalLink size={14} />
+                  </a>
+
                 </div>
 
               </div>

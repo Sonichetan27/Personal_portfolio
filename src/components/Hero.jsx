@@ -101,7 +101,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-base sm:text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Building scalable cloud architectures and data-intensive applications at{' '}
+          Building projects, learning systems, and solving real-world problems
           <span className="font-semibold text-primary-600 dark:text-accent-400">
             {personalInfo.company}
           </span>
@@ -123,15 +123,16 @@ export default function Hero() {
           >
             View My Work
           </Link>
-          <Link
-            to="contact"
+          <a
+            href="https://drive.google.com/file/d/1gttw3zkHbtmofWXRKxWro9bq8nFmc_JF/view?usp=drive_link"
+            target='_blank'
             smooth={true}
             offset={-70}
             duration={500}
             className="px-8 py-3 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-primary-500 dark:hover:border-accent-400 hover:text-primary-600 dark:hover:text-accent-400 rounded-xl font-medium transition-all hover:scale-105 cursor-pointer"
           >
-            Contact Me
-          </Link>
+            View Resume
+          </a>
         </motion.div>
 
         {/* Social Links */}
